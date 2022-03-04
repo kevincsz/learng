@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://127.0.0.1:8848/1/js/%E6%8E%92%E4%BB%96%E6%80%9D%E6%83%B3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title></title>
+		<style type="text/css">
+			span{
+				height: 100px;
+				width: 100px;
+				background-color: #FF0000;
+				float: left;
+				margin-right: 30px;
+				border: 1px solid black;
+				cursor: pointer;
+			}
+			.current{
+				background-color: blue ;
+			}
+		</style>
+	</head>
+	<body>
+	     <div id="box">
+			 <span></span>
+			 <span></span>
+			 <span></span>
+			 <span></span>
+			 <span></span>
+			 <span></span>
+			 <span></span>
+		 </div>
+		<script type="text/javascript">
+			//需求：页面上有7个盒子，点击当前的盒子让他的背景变成蓝色
+			var a =document.getElementById("box");
+			var b = a.getElementsByTagName("span");
+			for(var i = 0;i<b.length;i++){
+				b[i].onclick = function(){
+					this.className="current";
+					
+			}
+		</script>
+	<script>document.write('<script src="//' + (location.host || 'localhost').split(':')[0] + ':35929/livereload.js?snipver=1"></' + 'script>')</script><script src="./排他思想_files/livereload.js"></script><script>document.addEventListener('LiveReloadDisconnect', function() { setTimeout(function() { window.location.reload(); }, 500); })</script>
+
+</body></html>
